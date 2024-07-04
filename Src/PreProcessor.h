@@ -30,7 +30,7 @@ DAMAGE.
 #define PRE_PROCESSOR_INCLUDED
 
 #ifndef BIG_DATA								// Allow over-riding if defined before PreProcessor.h
-#undef BIG_DATA									// Supports processing requiring more than 32-bit integers for indexing
+#define BIG_DATA									// Supports processing requiring more than 32-bit integers for indexing
 												// Note: enabling BIG_DATA can generate .ply files using "longlong" for vertex indices instead of "int".
 												// These are not standardly supported by .ply reading/writing applications.
 												// The executable ChunkPLY can help by partitioning the mesh into more manageable chunks
